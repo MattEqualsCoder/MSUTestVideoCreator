@@ -24,6 +24,12 @@ $ pipx install msu_test_video_creator
 $ msu_test_video_creator -f test.pcm -o test.mp4
 ```
 
+If you need to upgrade, then you can run the following:
+
+```
+$ pipx upgrade msu_test_video_creator
+```
+
 ### Installation Option 2: pip
 
 First, make sure you have pip installed and running: https://packaging.python.org/en/latest/tutorials/installing-packages/
@@ -32,6 +38,12 @@ First, make sure you have pip installed and running: https://packaging.python.or
 $ pip install msu_test_video_creator
 
 $ py -m msu_test_video_creator -f test.pcm -o test.mp4
+```
+
+If you need to upgrade, then you can run the following:
+
+```
+$ pip install msu_test_video_creator --upgrade
 ```
 
 ## Usage
@@ -49,6 +61,12 @@ $ py -m msu_test_video_creator -f test.pcm -o test.mp4
 The application requires two arguments:
 
 - -f: A comma-delimited list of all pcm files to include
+- -i: The path to a YAML file with a list of all pcm files in the following format:
+    ```
+    Files:
+     - c:/pathto/file-1.pcm
+     - C:/pathto/file-2.pcm
+    ```
 - -o: The path to the mp4 file to generate
 
 
